@@ -2050,6 +2050,108 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MovingBox = {
     .images = sPicTable_MovingBox,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoodenGate = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_WOODEN_GATE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_WoodenGate,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoodenGateTop = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_WOODEN_GATE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16,
+    .subspriteTables = sOamTables_16x16,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_WoodenGateTop,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoodenGateBottom = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_WOODEN_GATE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16,
+    .subspriteTables = sOamTables_16x16,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_WoodenGateBottom,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StoneGateTop = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_STONE_GATE, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128, .width = 16, .height = 16, .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S, .inanimate = TRUE, .compressed = FALSE, .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16, .subspriteTables = sOamTables_16x16, .anims = sAnimTable_Inanimate,
+    .images = sPicTable_StoneGateTop,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StoneGateBottom = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_STONE_GATE, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128, .width = 16, .height = 16, .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S, .inanimate = TRUE, .compressed = FALSE, .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16, .subspriteTables = sOamTables_16x16, .anims = sAnimTable_Inanimate,
+    .images = sPicTable_StoneGateBottom,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ObsidianGateTop = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_OBSIDIAN_GATE, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128, .width = 16, .height = 16, .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S, .inanimate = TRUE, .compressed = FALSE, .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16, .subspriteTables = sOamTables_16x16, .anims = sAnimTable_Inanimate,
+    .images = sPicTable_ObsidianGateTop,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ObsidianGateBottom = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_OBSIDIAN_GATE, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128, .width = 16, .height = 16, .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S, .inanimate = TRUE, .compressed = FALSE, .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16, .subspriteTables = sOamTables_16x16, .anims = sAnimTable_Inanimate,
+    .images = sPicTable_ObsidianGateBottom,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrystalGateTop = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_CRYSTAL_GATE, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128, .width = 16, .height = 16, .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S, .inanimate = TRUE, .compressed = FALSE, .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16, .subspriteTables = sOamTables_16x16, .anims = sAnimTable_Inanimate,
+    .images = sPicTable_CrystalGateTop,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrystalGateBottom = {
+    .tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_CRYSTAL_GATE, .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128, .width = 16, .height = 16, .paletteSlot = PALSLOT_NPC_SPECIAL,
+    .shadowSize = SHADOW_SIZE_S, .inanimate = TRUE, .compressed = FALSE, .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16, .subspriteTables = sOamTables_16x16, .anims = sAnimTable_Inanimate,
+    .images = sPicTable_CrystalGateBottom,
+};
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CableCar = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_CABLE_CAR,

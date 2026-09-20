@@ -461,6 +461,25 @@ static const struct SpriteFrameImage sPicTable_MovingBox[] = {
     obj_frame_tiles(gObjectEventPic_MovingBox),
 };
 
+static const struct SpriteFrameImage sPicTable_WoodenGate[] = {
+    obj_frame_tiles(gObjectEventPic_WoodenGate),
+};
+
+static const struct SpriteFrameImage sPicTable_WoodenGateTop[] = {
+    obj_frame_tiles(gObjectEventPic_WoodenGateTop),
+};
+
+static const struct SpriteFrameImage sPicTable_WoodenGateBottom[] = {
+    obj_frame_tiles(gObjectEventPic_WoodenGateBottom),
+};
+
+static const struct SpriteFrameImage sPicTable_StoneGateTop[] = { obj_frame_tiles(gObjectEventPic_StoneGateTop) };
+static const struct SpriteFrameImage sPicTable_StoneGateBottom[] = { obj_frame_tiles(gObjectEventPic_StoneGateBottom) };
+static const struct SpriteFrameImage sPicTable_ObsidianGateTop[] = { obj_frame_tiles(gObjectEventPic_ObsidianGateTop) };
+static const struct SpriteFrameImage sPicTable_ObsidianGateBottom[] = { obj_frame_tiles(gObjectEventPic_ObsidianGateBottom) };
+static const struct SpriteFrameImage sPicTable_CrystalGateTop[] = { obj_frame_tiles(gObjectEventPic_CrystalGateTop) };
+static const struct SpriteFrameImage sPicTable_CrystalGateBottom[] = { obj_frame_tiles(gObjectEventPic_CrystalGateBottom) };
+
 static const struct SpriteFrameImage sPicTable_CableCar[] = {
     obj_frame_tiles(gObjectEventPic_CableCar),
 };

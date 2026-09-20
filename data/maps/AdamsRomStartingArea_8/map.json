@@ -1,0 +1,83 @@
+{
+  "id": "MAP_ADAMS_ROM_STARTING_AREA_8",
+  "name": "AdamsRomStartingArea_8",
+  "layout": "LAYOUT_ADAMS_ROM_STARTING_AREA_8",
+  "music": "MUS_CONTEST",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ADAMS_ROM_STARTING_AREA_7",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "CRYSTAL_GATE_RIGHT_15_BOTTOM",
+      "graphics_id": "OBJ_EVENT_GFX_CRYSTAL_GATE_BOTTOM",
+      "x": 13,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AdamsRomStartingArea_EventScript_CrystalBarricade",
+      "flag": "FLAG_HIDE_ADAMS_STARTING_AREA_BARRICADE_15_RIGHT"
+    },
+    {
+      "local_id": "CRYSTAL_GATE_LEFT_15_BOTTOM",
+      "graphics_id": "OBJ_EVENT_GFX_CRYSTAL_GATE_BOTTOM",
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AdamsRomStartingArea_EventScript_CrystalBarricade",
+      "flag": "FLAG_HIDE_ADAMS_STARTING_AREA_BARRICADE_15_LEFT"
+    },
+    {
+      "local_id": "CRYSTAL_GATE_RIGHT_15_TOP",
+      "graphics_id": "OBJ_EVENT_GFX_CRYSTAL_GATE_TOP",
+      "x": 13,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AdamsRomStartingArea_EventScript_CrystalBarricade",
+      "flag": "FLAG_HIDE_ADAMS_STARTING_AREA_BARRICADE_15_RIGHT"
+    },
+    {
+      "local_id": "CRYSTAL_GATE_LEFT_15_TOP",
+      "graphics_id": "OBJ_EVENT_GFX_CRYSTAL_GATE_TOP",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AdamsRomStartingArea_EventScript_CrystalBarricade",
+      "flag": "FLAG_HIDE_ADAMS_STARTING_AREA_BARRICADE_15_LEFT"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

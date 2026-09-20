@@ -188,6 +188,41 @@ static const u8 sText_Winona[] = _("WINONA");
 static const u8 sText_Phoebe[] = _("PHOEBE");
 static const u8 sText_Glacia[] = _("GLACIA");
 
+void RemoveBarrierPartsBySharedFlag(void)
+{
+    const struct ObjectEventTemplate *talked;
+    u16 flagId;
+    u8 i;
+    u8 mapNum = gSaveBlock1Ptr->location.mapNum;
+    u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
+
+    talked = GetObjectEventTemplateByLocalIdAndMap(
+        gSpecialVar_LastTalked, mapNum, mapGroup);
+
+    if (talked == NULL || talked->flagId == 0)
+        return;
+
+    flagId = talked->flagId;
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        struct ObjectEvent *objectEvent = &gObjectEvents[i];
+        const struct ObjectEventTemplate *template;
+
+        if (!objectEvent->active
+         || objectEvent->mapNum != mapNum
+         || objectEvent->mapGroup != mapGroup)
+            continue;
+
+        template = GetObjectEventTemplateByLocalIdAndMap(
+            objectEvent->localId, mapNum, mapGroup);
+
+        if (template != NULL && template->flagId == flagId)
+            RemoveObjectEventByLocalIdAndMap(
+                objectEvent->localId, mapNum, mapGroup);
+    }
+}
+
 void Special_ShowDiploma(void)
 {
     SetMainCallback2(CB2_ShowDiploma);

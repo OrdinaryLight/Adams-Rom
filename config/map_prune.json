@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "keep_maps": [
+    "AdamsRomStartingArea"
+  ],
+  "entrypoint": {
+    "map_id": "MAP_ADAMS_ROM_STARTING_AREA",
+    "x": 10,
+    "y": 57
+  },
+  "legacy_unregistered_vanilla_maps": [
+    "Route19_UnusedHouse_Frlg",
+    "Route23_UnusedHouse",
+    "Route6_UnusedHouse_Frlg",
+    "SevenIsland_UnusedHouse"
+  ],
+  "wild_encounter_seed": {
+    "map": "MAP_ADAMS_ROM_STARTING_AREA",
+    "source_map": "MAP_ROUTE101",
+    "base_label": "gAdamsRomStartingArea"
+  }
+}

@@ -111,6 +111,15 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cameraman;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanUnderwater;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayUnderwater;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MovingBox;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoodenGate;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoodenGateTop;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WoodenGateBottom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StoneGateTop;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StoneGateBottom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ObsidianGateTop;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ObsidianGateBottom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrystalGateTop;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrystalGateBottom;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CableCar;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DevonEmployee;
@@ -516,6 +525,15 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BRENDAN_UNDERWATER] =       &gObjectEventGraphicsInfo_BrendanUnderwater,
     [OBJ_EVENT_GFX_MAY_UNDERWATER] =           &gObjectEventGraphicsInfo_MayUnderwater,
     [OBJ_EVENT_GFX_MOVING_BOX] =               &gObjectEventGraphicsInfo_MovingBox,
+    [OBJ_EVENT_GFX_WOODEN_GATE] =              &gObjectEventGraphicsInfo_WoodenGate,
+    [OBJ_EVENT_GFX_WOODEN_GATE_TOP] =          &gObjectEventGraphicsInfo_WoodenGateTop,
+    [OBJ_EVENT_GFX_WOODEN_GATE_BOTTOM] =       &gObjectEventGraphicsInfo_WoodenGateBottom,
+    [OBJ_EVENT_GFX_STONE_GATE_TOP] =           &gObjectEventGraphicsInfo_StoneGateTop,
+    [OBJ_EVENT_GFX_STONE_GATE_BOTTOM] =        &gObjectEventGraphicsInfo_StoneGateBottom,
+    [OBJ_EVENT_GFX_OBSIDIAN_GATE_TOP] =        &gObjectEventGraphicsInfo_ObsidianGateTop,
+    [OBJ_EVENT_GFX_OBSIDIAN_GATE_BOTTOM] =     &gObjectEventGraphicsInfo_ObsidianGateBottom,
+    [OBJ_EVENT_GFX_CRYSTAL_GATE_TOP] =         &gObjectEventGraphicsInfo_CrystalGateTop,
+    [OBJ_EVENT_GFX_CRYSTAL_GATE_BOTTOM] =      &gObjectEventGraphicsInfo_CrystalGateBottom,
     [OBJ_EVENT_GFX_CABLE_CAR] =                &gObjectEventGraphicsInfo_CableCar,
     [OBJ_EVENT_GFX_SCIENTIST_2] =              &gObjectEventGraphicsInfo_Scientist2,
     [OBJ_EVENT_GFX_DEVON_EMPLOYEE] =           &gObjectEventGraphicsInfo_DevonEmployee,

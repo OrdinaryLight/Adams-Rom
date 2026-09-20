@@ -1,0 +1,85 @@
+mapscripts AdamsRomStartingArea_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setrespawn(HEAL_LOCATION_ADAMS_ROM_STARTING_AREA)
+    }
+
+    
+}
+
+script AdamsRomStartingArea_EventScript_Truck {
+    setvar(VAR_0x8005, 10)
+    bufferstring(STR_VAR_1, AdamsRomStartingArea_Text_Truck)
+    call(AdamsRomStartingArea_EventScript_PayForBarrier)
+    end
+}
+
+script AdamsRomStartingArea_EventScript_WoodenGate {
+    setvar(VAR_0x8005, 50)
+    bufferstring(STR_VAR_1, AdamsRomStartingArea_Text_WoodenGate)
+    call(AdamsRomStartingArea_EventScript_PayForBarrier)
+    end
+}
+
+script AdamsRomStartingArea_EventScript_StoneBarricade {
+    setvar(VAR_0x8005, 100)
+    bufferstring(STR_VAR_1, AdamsRomStartingArea_Text_StoneBarricade)
+    call(AdamsRomStartingArea_EventScript_PayForBarrier)
+    end
+}
+
+script AdamsRomStartingArea_EventScript_ObsidianBarricade {
+    setvar(VAR_0x8005, 200)
+    bufferstring(STR_VAR_1, AdamsRomStartingArea_Text_ObsidianBarricade)
+    call(AdamsRomStartingArea_EventScript_PayForBarrier)
+    end
+}
+
+script AdamsRomStartingArea_EventScript_CrystalBarricade {
+    setvar(VAR_0x8005, 500)
+    bufferstring(STR_VAR_1, AdamsRomStartingArea_Text_CrystalBarricade)
+    call(AdamsRomStartingArea_EventScript_PayForBarrier)
+    end
+}
+
+script AdamsRomStartingArea_EventScript_PayForBarrier {
+    lock
+    buffernumberstring(STR_VAR_2, VAR_0x8005)
+    msgbox("Remove the {STR_VAR_1}?\nCost: ¥{STR_VAR_2}.", MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == YES) {
+        specialvar(VAR_RESULT, IsEnoughForCostInVar0x8005)
+
+        if (var(VAR_RESULT) == TRUE) {
+            special(SubtractMoneyFromVar0x8005)
+            // removeobject uses the removed object's own map flag automatically.
+            special(RemoveBarrierPartsBySharedFlag)
+            msgbox("The {STR_VAR_1} was removed!")
+        } else {
+            msgbox("You don't have enough money.")
+        }
+    }
+
+    release
+    return
+}
+
+text AdamsRomStartingArea_Text_WoodenGate {
+    "wooden gate"
+}
+
+text AdamsRomStartingArea_Text_StoneBarricade {
+    "stone barricade"
+}
+
+text AdamsRomStartingArea_Text_ObsidianBarricade {
+    "obsidian barricade"
+}
+
+text AdamsRomStartingArea_Text_CrystalBarricade {
+    "crystal barricade"
+}
+
+
+text AdamsRomStartingArea_Text_Truck {
+    "truck"
+}
